@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <nav>Just a sample nav</nav>
+</head>
+<title>
+    Hello this is for shell Assignment
+</title>
+<body>
+    <h1>shell project</h1>
+    <p>shell </p>
+
+    <div>
+        welcome to div tag
+    </div>
+
+    <h2>Learing about TCS and Adobe</h2>
+    <p>TCS Interactive and Adobe combine strengths to reimagine customers’ digital experiences.
+      Adobe has been instrumental in providing a robust platform for TCS Interactive to design and develop art with its new product Adobe XD.
+         Watch our designers at TCS Interactive's Digital Reimagination™ Studio in Santa Clara share their experiences with Adobe products.</p>
+
+         <br/>
+      
+    <img width="600px" height="600px"  src="https://cdn.discordapp.com/attachments/704549123155689603/870374505539858522/unknown.png"
+     alt="https://cdn.discordapp.com/attachments/704549123155689603/870374505539858522/unknown.png" class="center"/>
+
+    <br/>
+    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+
+    <h4>Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. At tempor commodo ullamcorper a lacus vestibulum sed. Aliquam purus sit amet luctus venenatis lectus magna. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Elit eget gravida cum sociis natoque penatibus et magnis. Enim ut tellus elementum sagittis vitae. Massa massa ultricies mi quis. Quam nulla porttitor
+         massa id neque aliquam vestibulum morbi blandit. Ipsum consequat nisl vel pretium lectus. Urna id volutpat lacus laoreet non. Viverra orci sagittis eu volutpat odio. </h2>
+
+    <h5>Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Vitae tortor condimentum lacinia quis. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Sapien pellentesque habitant morbi tristique senectus et netus et. 
+        Sem fringilla ut morbi tincidunt augue interdum. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Nibh ipsum consequat nisl vel pretium lectus. </h2>
+
+    <h6>Mi quis hendrerit dolor magna eget. Sed vulputate odio ut enim. 
+        Et magnis dis parturient montes nascetur ridiculus mus. Nisl vel pretium lectus quam id leo in vitae turpis. Semper risus in hendrerit gravida. Purus non enim praesent elementum.  </h2>
+
+    <footer>just a sample footer</footer>
+    
+</body>
+</html>
