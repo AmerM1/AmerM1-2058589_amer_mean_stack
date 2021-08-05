@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="blog1.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <ul class="nav justify-content-center ">
+        <li class="nav-item ">
+          <a class="nav-link active" href="MainPage.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About-Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact-Us.html">Contact-Us</a>
+        </li>
+      
+      </ul>
+<style>
+ h1 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+       
+
+</style>
+
+</head>
+<body class="container">
+    <h1>Simply Blogging</h1>
+    <br>
+   <br>
+   
+
+      <form>
+  <div class="form-group">
+    <label for="title--">Title</label>
+    <input type="text" class="form-control" id="title" placeholder="Title" >
+  </div>
+
+  <div class="form-group">
+    <label for="Article--">Article</label>
+    <input type="text" class="form-control" id="article" placeholder="Content" >
+  </div>
+
+  <div class="form-group">
+    <label for="image--"> Add Image Link</label>
+    <input type="text" class="form-control" id="ImageLink" placeholder="Image url" >
+  </div>
+
+  <input type="button" value="Add Blog" class="btn btn-primary" onclick="AddBlog()">
+  <input type="button" value="Clear Blogs" class="btn btn-primary" onclick="clearSession()">
+  <input type="reset" value="Clear Inputs" class="btn btn-primary"><br><br>
+
+  
+</form>
+
+
+<div id="blog" class="container row" >   
+    
+</div>
+
+ <style>
+
+.blogItem{
+    border: 2px solid black;
+    margin: 10px;  
+    word-wrap:break-word;
+    overflow-y: scroll;
+    height: 300px;
+	width: 350px;
+  display: inline-block;
+  
+}
+
+ </style>
+</body>
+</html>
