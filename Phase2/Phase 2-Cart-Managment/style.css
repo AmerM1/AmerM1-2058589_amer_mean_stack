@@ -1,0 +1,27 @@
+/* .row{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+
+h1{
+    text-align: center;
+}
+.item{
+    background-color: azure;
+    width:  350px;
+    height: 350px;
+    border: 5px solid rgb(2, 2, 2);
+    padding: 50px;
+    margin: 20px;
+    color: rgb(148, 11, 82);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    display: inline-block;
+  }
+  img{
+    border-radius: 20px;
+   width: 100px;
+   height: 100px;
+
+  }

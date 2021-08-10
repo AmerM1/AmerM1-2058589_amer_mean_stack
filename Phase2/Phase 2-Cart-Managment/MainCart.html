@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="Functions.js"></script>
+
+    <ul class="nav justify-content-center ">
+        <li class="nav-item ">
+          <a class="nav-link active" href="MainCart.html">Shopping Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ViewCheckOut.html">View Check Out</a>
+        </li>
+        
+      
+      </ul>
+<h1>Shopping Cart</h1>
+</head>
+<body onload="CartTotal()">
+
+
+    <div class="container">
+        <label>Cart Size:</label>
+        <label id="CartAmount">...</label>
+        <form action="ViewCheckOut.html">
+            <form action="ViewCheckOut.html">
+                <input type="submit" class="btn btn-success" value="checkout" />
+            </form>
+        <hr/>
+</div>
+<div class="row">
+ <div class="item">
+    <img src="https://i2.wp.com/ceklog.kindel.com/wp-content/uploads/2013/02/firefox_2018-07-10_07-50-11.png?fit=641%2C618&ssl=1">
+    <br/><br/><div class="col"><label>Name: Apple</label></div>
+    <div class="col"><label>Price:$1</label></div>
+    <input type="button" value="Add to cart" class="btn btn-link" onclick="addCartItem('Apple', 1)"/><br/>
+</div>
+
+<div class="item">
+    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-mini-select-wifi-spacegray-201911_FMT_WHH?wid=1000&hei=1000&fmt=jpeg&qlt=95&.v=1573825365923">
+    <br/><br/><div class="col"><label>Name: Ipad Mini</label></div>
+    <div class="col"><label>Price:$350</label></div>
+    <input type="button" value="Add to cart" class="btn btn-link"onclick="addCartItem('Ipad Mini', 350)"/><br/>
+</div>
+
+<div class="item">
+    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSYUwyl8RcvDGtw0ol6GZqPwBTdBzgv71FOJ0Fl0F-338PJ5NWT5RVHMhD01Po0YLANPiqaDb-erPstQUVYnkNum1F9N0SIJWn5OLVzqxyw&usqp=CAE">
+    <br/><br/><div class="col"><label>Name: NARUTO SHIPPUDEN </label></div>
+    <div class="col"><label>Price:$60</label></div>
+    <input type="button" value="Add to cart" class="btn btn-link" onclick="addCartItem('NARUTO SHIPPUDEN ', 60)"/><br/>
+</div>
+
+
+
+ </div>
+
+
+ <div class="row">
+    <div class="item">
+       <img src="https://www.nintendo.com//content/dam/noa/en_US/games/switch/m/mario-kart-8-deluxe-switch/mario-kart-8-deluxe-switch-hero.jpg">
+       <br/><br/><div class="col"><label>Name: Mario Kart 8 Deluxe</label></div>
+       <div class="col"><label>Price:$79</label></div>
+       <input type="button" value="Add to cart" class="btn btn-link" onclick="addCartItem('Mario Kart 8 Deluxe', 79)" /><br/>
+   </div>
+   
+   <div class="item">
+       <img src="https://m.media-amazon.com/images/I/91lS5yEDH-L._AC_SY450_.jpg">
+       <br/><br/><div class="col"><label>Name: LG 27GL83A-B 27</label></div>
+       <div class="col"><label>Price:$379</label></div>
+       <input type="button" value="Add to cart" class="btn btn-link" onclick="addCartItem('LG 27GL83A-B 27', 379)"/><br/>
+   </div>
+   
+   <div class="item">
+       <img src="https://cdn.shopify.com/s/files/1/2660/5202/products/shopify-image_d64234b6-7ca3-4403-b1f5-a4a105678f1f_1400x.jpg?v=1622161396">
+       <br/><br/><div class="col"><label>Name: Sony XR65A80J Bravia</label></div>
+       <div class="col"><label>Price:$2,000</label></div>
+       <input type="button" value="Add to cart" class="btn btn-link" onclick="addCartItem('Sony XR65A80J Bravia', 2000)"/><br/>
+   </div>
+   
+   
+   
+    </div>
+   
+
+</body>
+</html>
