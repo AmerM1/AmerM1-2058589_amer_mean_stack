@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- SignUp page -->
+<div class="BackGC">
+<div *ngIf="flagL" class="form-container">
+    <div class="form-content">
+    <h2>Registration Form</h2>
+    <form  [formGroup]="RegisterRef" (ngSubmit)="AddNewUser()">
+        <div class="form-fields">
+            <label > Full Name</label>
+            <input type="text" formControlName="Fullname">
+        
+            <label >Username</label>
+            <input type="text" formControlName="username">
+        
+            <label >Password</label>
+            <input type="password" formControlName="password">
+
+        </div>
+        <div class="form-actions">
+            <input type="button" class="btn btn-primary" value="Register" [disabled]="!RegisterRef.valid" (click)="AddNewUser()"/>
+            <input type="reset" class="btn btn-primary" value="reset"/>
+            <input type="button"class="btn btn-primary" value="Login Page" (click)="LPage()"/>
+
+        </div>
+    
+    </form>
+    </div>
+    <!--  -->
+  
+
+</div>
+
+
+
+<div *ngIf="flagS" class="form-container">
+    <div class="form-content">
+    <h2> login form </h2>
+    <form [formGroup]="loginRef" (ngSubmit)="checkUser()">
+        <div class="form-fields">
+        <label>UserName</label>
+        <input type="text" formControlName="user"/>
+        <label>Password</label>
+        <input type="password" formControlName="pass"/>
+        <div class="form-actions">
+        <input type="submit" class="btn btn-primary" value="Login" [disabled]="!loginRef.valid"/>
+        <input type="reset" class="btn btn-primary" value="reset"/>
+        <input type="button" class="btn btn-primary" [value]="sup" (click)="SPage ()"/>
+        </div>
+        </div>
+    </form>
+    </div>      
+</div>
+
+<!-- for contacts -->
+<hr>
+<div *ngIf="flagC" class="form-container">
+    <div class="form-content">
+        <h3>Welcome {{userName}}</h3>
+        <div class="form-fields">
+
+            <label >Name: </label>
+            <input type="text" #empName/>
+            <label >Phone Number: </label>
+            <input type="text" #empContact/>
+        </div>
+        <div class="form-actions">
+
+            <input class="btn btn-primary" type="button" value="Save " (click)="addContact(empName,empContact)"/>
+         <input type="button" class="btn btn-primary" value="Log Out" (click)="logOut()"/>
+
+        </div>
+        <h2>Contact details</h2>
+        <input class="btn btn-primary" type="button" [value]="notVisibil" (click)="showTable()">
+<div >
+    <table  *ngIf="isTableVisible" border="1" class="form-container">
+        <tr>
+          
+            <th>Name</th>
+            <th>phone Number</th>
+        </tr>
+        <tr *ngFor="let emp of contacts">
+        
+            <td>{{emp.name}}</td>
+            <td>{{emp.Pnumber}}</td>
+        </tr>
+</table>
+</div>
+
+    </div>
+</div>
+</div>
