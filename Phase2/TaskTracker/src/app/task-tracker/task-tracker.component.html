@@ -1,0 +1,68 @@
+<div >
+    
+<form class="inputs">
+    <h2>To-do-tasks</h2>
+    <mat-form-field appearance="fill">
+        <mat-label>Emp ID</mat-label>
+        <input matInput name="id" #empId  >
+    </mat-form-field>
+
+<br/>
+
+<mat-form-field appearance="fill">
+    <mat-label>Name:</mat-label>
+    <input matInput name="id" #empName  >
+</mat-form-field>
+<br/>
+
+<mat-form-field appearance="fill">
+    <mat-label>Task:</mat-label>
+    <input matInput name="Task" #empTask  >
+</mat-form-field>
+<br/>
+
+<mat-form-field appearance="fill">
+    <mat-label>Deadline:</mat-label>
+    <input matInput name="Deadline" #empDeadline  >
+</mat-form-field>
+
+
+<br/>
+    
+<button type="submit" mat-stroked-button color="primary" (click)="AddToDo(empId,empName,empTask,empDeadline)"> save task</button>
+<button type="reset" mat-stroked-button color="warn">reset</button>
+</form>
+
+<hr>
+<form class="inputs">
+<h2>To-do-List</h2>
+
+<button type="submit" mat-stroked-button color="warn" (click)="showTable()"> Click Here to Show To do list</button>
+
+<table mat-table *ngIf="isTableVisible" border="1"  class="center">
+<tr  *ngFor="let emp of ToDoList" >
+
+  
+<ng-container >
+<th>Emp ID</th>
+    <th>Name</th>
+    <th>Task</th>
+    <th>Deadline</th>
+</ng-container>
+
+</tr>
+
+<tr *ngFor="let emp of ToDoList">
+
+    <ng-container >
+    <td>{{emp.EmployeeName}}</td>
+    <td>{{emp.EmployeeId}}</td>
+    <td>{{emp.task}}</td>
+    <td>{{emp.deadline}}</td>
+</ng-container>
+
+</tr>
+
+</table>
+</form>
+</div>
