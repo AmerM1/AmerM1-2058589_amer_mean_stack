@@ -1,6 +1,7 @@
+
 <div >
-    
 <form class="inputs">
+    <h1>Task Tracker</h1>
     <h2>To-do-tasks</h2>
     <mat-form-field appearance="fill">
         <mat-label>Emp ID</mat-label>
@@ -20,11 +21,20 @@
     <input matInput name="Task" #empTask  >
 </mat-form-field>
 <br/>
-
+<!-- 
 <mat-form-field appearance="fill">
     <mat-label>Deadline:</mat-label>
     <input matInput name="Deadline" #empDeadline  >
 </mat-form-field>
+<br/> -->
+
+<mat-form-field class="example-full-width" appearance="legacy">
+    <mat-label>Dead Line</mat-label>
+    <input matInput [matDatepicker]="picker" #empDeadline>
+    <mat-datepicker-toggle matSuffix [for]="picker">
+    </mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
 
 
 <br/>
@@ -40,11 +50,11 @@
 <button type="submit" mat-stroked-button color="warn" (click)="showTable()"> Click Here to Show To do list</button>
 
 <table mat-table *ngIf="isTableVisible" border="1"  class="center">
-<tr  *ngFor="let emp of ToDoList" >
+<tr>
 
   
 <ng-container >
-<th>Emp ID</th>
+    <th>Emp ID</th>
     <th>Name</th>
     <th>Task</th>
     <th>Deadline</th>

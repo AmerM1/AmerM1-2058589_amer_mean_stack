@@ -4,6 +4,7 @@ import { NgForm } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 
 
+
 @Component({
   selector: 'app-task-tracker',
   templateUrl: './task-tracker.component.html',
@@ -34,11 +35,10 @@ constructor() { }
 
   AddToDo(empId:any,empName:any,empTask:any,empDeadline:any){
     let Empployeid =empId.value;
-    let EmployeeId =empName.value;
+    let EmployeeName =empName.value;
     let task =empTask.value;
-    let deadline =empDeadline.value;
-
-    let x = new ToDoList(Empployeid,EmployeeId,task,deadline)
+   let deadline =empDeadline.value;
+    let x = new ToDoList(Empployeid,EmployeeName,task,deadline)
     this.ToDoList.push(x)
     alert("new task added")
 
