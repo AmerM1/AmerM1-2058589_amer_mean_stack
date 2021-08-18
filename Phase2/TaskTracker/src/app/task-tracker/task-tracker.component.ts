@@ -38,8 +38,8 @@ constructor() { }
     let EmployeeName =empName.value;
     let task =empTask.value;
    let deadline =empDeadline.value;
-    let x = new ToDoList(Empployeid,EmployeeName,task,deadline)
-    this.ToDoList.push(x)
+    let x = new ToDoList(Empployeid,EmployeeName,task,deadline);
+    this.ToDoList.push(x);
     alert("new task added")
 
   }
