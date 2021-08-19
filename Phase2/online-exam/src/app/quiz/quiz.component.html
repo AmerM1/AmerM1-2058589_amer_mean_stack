@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Online Exam</h2>
+    <form [formGroup]="myForm" (ngSubmit)="submit()" class="quiz">
+        <div *ngFor="let q of examq" >
+            
+            <p>{{q.question}}</p>
+            <input type="radio" formControlName={{q.question}} name="{{q.question}}" value={{q.ans1}} required>
+            <span id={{q.ans1}}>{{q.ans1}}</span><br>
+            <input type="radio" formControlName={{q.question}} name="{{q.question}}" value={{q.ans2}} required>
+            <span id={{q.ans2}}>{{q.ans2}}</span> <br>
+            <input type="radio" formControlName={{q.question}} name="{{q.question}}" value={{q.ans3}} required>
+            <span id={{q.ans3}}>{{q.ans3}}</span><br>
+            <input type="radio" formControlName={{q.question}} name="{{q.question}}" value={{q.ans4}} required>
+            <span id={{q.ans4}}>{{q.ans4}}</span><br>
+            <hr>
+        </div>
+        <div class="score" [innerHTML]="output"></div>
+        <input  type="reset" class="btn btn-btn" value="Reset" (click)="reset()">
+
+        <input type="submit" class="btn btn-btn" value="Submit Quiz" [disabled]="myForm.invalid ">
+        
+    </form>
+    
+
+</div>

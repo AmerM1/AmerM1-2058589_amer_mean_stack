@@ -1,0 +1,15 @@
+.quiz{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: honeydew;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    background-color:darkgray;
+}
+
+.score{
+    color:white;
+}

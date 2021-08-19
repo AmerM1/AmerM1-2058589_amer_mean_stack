@@ -1,0 +1,82 @@
+[
+    {
+        "question" : "What is the name for the Jewish New Year?", 
+        "ans1" : "Hanukkah", 
+        "ans2" : "Yom Kippur", 
+        "ans3" : "Kwanza", 
+        "ans4" : "Rosh Hashanah ", 
+        "correctAns" : "Rosh Hashanah "
+    },
+    {
+        "question" : "How many blue stripes are there on the U.S. flag?", 
+        "ans1" : "6", 
+        "ans2" : "7", 
+        "ans3" : "13", 
+        "ans4" : "0 ", 
+        "correctAns" : "0 "
+    },
+    {
+        "question" : "What is the color of Donald Duck’s bowtie?", 
+        "ans1" : "Red ", 
+        "ans2" : "Yellow", 
+        "ans3" : "Blue", 
+        "ans4" : "White", 
+        "correctAns" : "Red "
+    },
+    {
+        "question" : "What was the name of the band Lionel Richie was a part of?", 
+        "ans1" : "King Harvest", 
+        "ans2" : "Spectrums", 
+        "ans3" : "Commodores ", 
+        "ans4" : "The Marshall Tucker Band", 
+        "correctAns" : "Commodores "
+    },
+    {
+        "question" : "Which animal does not appear in the Chinese zodiac?", 
+        "ans1" : "Dragon", 
+        "ans2" : "Rabbit", 
+        "ans3" : "Dog", 
+        "ans4" : "Hummingbird ", 
+        "correctAns" : "Hummingbird "
+    },
+    {
+        "question" : "Which country held the 2016 Summer Olympics?", 
+        "ans1" : "China", 
+        "ans2" : "Ireland", 
+        "ans3" : "Brazil ", 
+        "ans4" : "Italy", 
+        "correctAns" : "Brazil "
+    },
+    {
+        "question" : " Which planet is the hottest?", 
+        "ans1" : "Venus ", 
+        "ans2" : "Saturn", 
+        "ans3" : "Mercury", 
+        "ans4" : "Mars", 
+        "correctAns" : "Venus "
+    },
+    {
+        "question" : " Who was the only U.S. President to resign?", 
+        "ans1" : "Herbert Hoover", 
+        "ans2" : "Richard Nixon ", 
+        "ans3" : "George W. Bush", 
+        "ans4" : "Barack Obama", 
+        "correctAns" : "Richard Nixon "
+    },
+    {
+        "question" : "What does the “D” in “D-Day” stand for?", 
+        "ans1" : "Dooms", 
+        "ans2" : "Dark", 
+        "ans3" : "Day ", 
+        "ans4" : "Dunkirk", 
+        "correctAns" : "Day "
+    },
+    {
+        "question" : "In which city can you find the Liberty Bell?", 
+        "ans1" : "Washington, D.C.", 
+        "ans2" : "Boston", 
+        "ans3" : "Philadelphia ", 
+        "ans4" : "Manhattan ", 
+        "correctAns" : "Philadelphia "
+    }
+]
