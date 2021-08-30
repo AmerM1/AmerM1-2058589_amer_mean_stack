@@ -21,7 +21,7 @@ let addtask=`
         <br/><br/>
         <br/><br/><br/><br/>
         </div>
-        <h2 style="color:blue; font-size: 20px;>Task Add</h2><br/>
+        <h2>Task Add</h2><br/>
         <form class="form-group" action="addT">
         <div class="row">
                <div class="col-2"><label>Emp Id: </label></div>
@@ -60,7 +60,7 @@ let deletetask=`<!DOCTYPE html>
 </head>
 <body>
     <div >
-        <h2 style="color:blue; font-size: 20px; >Delete Task</h2><br/>
+        <h2>Delete Task</h2><br/>
         <form class="form-group" action="delete">
         
         <div class="row">
