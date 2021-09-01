@@ -1,0 +1,13 @@
+.container{
+    border: 2px solid black;
+    margin: 10px;  
+    word-wrap:break-word;
+    overflow-y: scroll;
+    height: 300px;
+	width: 350px;
+  display: inline-block;
+}
+
+h2{
+    text-align: auto;
+}

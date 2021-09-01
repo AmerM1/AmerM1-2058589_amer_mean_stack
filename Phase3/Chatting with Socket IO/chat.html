@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+      var socket=io();
+      socket.emit("obj","Hello Server I am Web Socket Client")
+      socket.on("obj1",(msg)=>{
+        var p = document.createElement("p"); 
+                document.getElementById("chatb").appendChild(p);
+                var msgPTag = document.createElement("p");
+                var msgPTagContent = document.createTextNode(msg);
+                msgPTag.appendChild(msgPTagContent);
+                p.appendChild(msgPTag);
+          console.log(msg);
+      })
+      
+
+      socket.on("obj3",(msg)=>{
+        console.log("received message: ", msg)
+            var p = document.createElement("p"); 
+            document.getElementById("chatb").appendChild(p);
+            var msgPTag = document.createElement("p");
+            var msgPTagContent = document.createTextNode("Server: "+msg);
+            msgPTag.appendChild(msgPTagContent);
+            p.appendChild(msgPTag);         
+        })
+      
+        chatb=()=>{
+        let UserMsg = document.getElementById("UserMsg").value;
+           let UserName = document.getElementById("UserName").value;
+           socket.emit("obj3",UserMsg)
+
+           var p = document.createElement("p"); 
+            document.getElementById("chatb").appendChild(p);
+            var msgPTag = document.createElement("p");
+            var msgPTagContent = document.createTextNode( UserName +": "+UserMsg);
+            msgPTag.appendChild(msgPTagContent);
+            p.appendChild(msgPTag);
+           document.getElementById("UserMsg").value="";
+        }
+   </script>
+</head>
+<body>
+    <form class="container"> 
+    <h2>Chat Bot</h2>
+    Name: <input type="text"  id="UserName"><br>
+    Message: <input type="text"  id="UserMsg"><br>
+    <input type="button" class="btn btn-success" value="send" onclick="chatb()">
+    <div id="chatb" ></div>
+</form>
+
+<style>
+
+    .container{
+        border: 2px solid black;
+        margin: 10px;  
+        word-wrap:break-word;
+        overflow-y: scroll;
+        height: 400px;
+        width: 450px;
+      display: inline-block;
+      
+    }
+    
+     </style>
+</body>
+</html>
