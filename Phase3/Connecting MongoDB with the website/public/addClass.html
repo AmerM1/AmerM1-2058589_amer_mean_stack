@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+<div>
+    <div class="container">
+    <h3>Add course</h3><br />
+    <a href="home1.html" target="_blank">home</a><br>
+
+        <form>
+            
+            <label for="_id">Course ID:</label>
+            <input  name="_id" type="number" required/><br>
+            <label for="cname">Course Name:</label>
+            <input  name="cname" type="text" required/><br>
+            <label for="cinfo">Description:</label>
+            <input  name="cinfo" type="text" required/><br>
+            <label for="price">Amount:</label>
+            <input name="price" type="number" required/><br>
+            <button type="button" id="save" class="btn btn-primary" onclick="saveClass()">Add</button>
+            <button type="button" id="reset" class="btn btn-warning" onclick="resetForm()" >Reset</button><br>
+    
+        </form>
+    </div>
+</div>
+   <script src="addClass.js"></script>
+</body>
+</html>
