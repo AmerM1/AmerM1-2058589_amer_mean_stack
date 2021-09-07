@@ -22,6 +22,7 @@ mongoose.connect(url).then(res=>console.log("connected")).catch(error=>console.l
 app.get("/",(request,response)=>{
     response.sendFile(__dirname+"/home.html")
 })
+
 app.use(express.static('public'))
 
 
@@ -29,4 +30,4 @@ app.use(express.static('public'))
 app.use("/api/class",routerClass);
 // app.use("/api/order",routerOrder);
 // app.use("/api/login",routerLogin);
-app.listen(9090,()=>console.log("Server running on port number 9090"))
+app.listen(9080,()=>console.log("Server running on port number 9080"))
