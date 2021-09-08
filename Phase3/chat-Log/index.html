@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>ChatApp</title>
+    <script type="text/JavaScript">
+    let ws = new WebSocket("ws://localhost:9090");
+
+ws.onopen = ()=>{
+
+    info = ()=>{
+        addChat();
+        let msg = document.getElementById("msgs").value;
+        ws.send(msg);  
+    }
+}
+
+const addChat = async()=>{
+        await fetch('/api/chat/save',{
+        method: 'POST',
+        body: JSON.stringify(userInput()),
+        headers: {'Content-Type':'application/json'}
+    })
+     alert("saved successfully to Mongo Database")
+    }
+        const userInput = ()=>{
+        const input = {}
+        document.querySelectorAll('input').forEach(info=>{input[info.name]=info.value})
+        return input
+}
+    
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+        <nav >
+            <h2 style="color: red;">Chat Logs</h2>  
+        </nav>
+</div>
+<br>
+<hr>    
+        <div>
+        <label for="formGroupExampleInput" style="color: red; font-family:Arial, Helvetica, sans-serif; margin-top: 20px;">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+        </div>
+
+    <div >
+
+        <form style="border: rgb(211, 176, 176); padding-bottom: 20px;">
+             <div class="form-group">
+                 <label for="formGroupExampleInput" style="color: red; font-family:Arial, Helvetica, sans-serif; margin-top: 20px;">Message</label>
+                 <input type="text" class="form-control" id="msgs" name="message"placeholder="Write Message Here">
+             </div>
+             <button type="button" class="btn btn-dark" style="font-family:Arial, Helvetica, sans-serif" onclick= info() id="blogBtn">Send</button>
+         </form>
+     </div>
+
+    <br>
+    <hr>
+
+     <div class="container" id="outter" style="color: rgb(25, 15, 112);">
+        <div class="row" id="row">
+            <div class="col-6">
+                <div>
+                    <p id="server" style="font-weight: bold;"></p>
+                    <p id="chatL"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
